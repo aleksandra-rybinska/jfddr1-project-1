@@ -1,13 +1,12 @@
 body {
-    background: #eee;
-    color: white;
+    background: #eee;;
 }
 h1 {
-    color: #1f5266
+    color: #000f24
 }
 a {
-    background: #1f5266;
-    color: #fffa89;
+    background: #000f24;
+    color: #51ddd2;
     padding: 1em 1.5em;
     text-decoration: none;
     text-transform: uppercase;
