@@ -4,31 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <title>New design shop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="">meble</a></li>
-            <li><a href="">oświetlenie</a></li>
-            <li><a href="">dekoracje</a></li>
-            <li><a href="">rośliny</a></li>
-            <li><a href="">promocje</a></li>
-        </ul>
-    </nav>
     <header>
-        <img src="img/baner.png" alt="logo" width="1000px" height="auto">
+        <img src="img/baner.png" alt="logo">
 
     </header>
 
-    <section>
+    <nav>
+        <a href="">meble</a>
+        <a href="">oświetlenie</a>
+        <a href="">dekoracje</a>
+        <a href="">rośliny</a>
+        <a href="">promocje</a>
+    </nav>
+
+    <div>
         <h1>promocje</h1>
+    </div>
 
-    </section>
+    <main id="item-grid">
+        
+        <div class="item">
+            <img src="img/fotel-glam-deep-forest-green.jpg" alt="fotel glam forest green" class="item-logo">
+            <p class="item-name">Fotel glam forest green</p>
+            <p class="item-old-price">899,99zł</p>
+            <p class="item-discount">-14%</p>
+            <p class="item-new-price">769,99zł</p>
+            <button class="chart-button">dodaj do koszyka</button> 
+            <button class="wish-button">dodaj do listy życzeń</button>
+        </div>
+
+
+        <div class="item">
+            <img src="img/lampa-stojaca-podlogowa-tripod-68-cm.jpg" alt="lampa stojąca podłogowa">
+            <p>Lampa stojąca podłogowa tripod 68cm</p>
+            <p>299,99zł</p>
+            <p>-10%</p>
+            <p>269,99zł</p>
+            <div class="buttons">
+                <button class="chart-button">dodaj do koszyka</button> 
+                <button class="wish-button">dodaj do listy życzeń</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/dekoracja-scienna-alu-glowa-jelenia.jpg" alt="dekoracja ścienna głowa jelenia">
+            <p>Dekoracja ścienna głowa jelenia</p>
+            <p>529,99zł</p>
+            <p>-14%</p>
+            <p>429,99zł</p>
+            <div class="buttons">
+                <button class="chart-button">dodaj do koszyka</button> 
+                <button class="wish-button">dodaj do listy życzeń</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/mech-dekoracyjny.jpg" alt="mech dekoracyjny">
+            <p>Mech dekoracyjny</p>
+            <p>499,99zł</p>
+            <p>-30%</p>
+            <p>349,99zł</p>
+            <div class="buttons">
+                <button class="chart-button">dodaj do koszyka</button> 
+                <button class="wish-button">dodaj do listy życzeń</button>
+            </div>
+        </div>
+
+    </main>
 
     <section>
-        <div><img src="img/delivery.png" alt="delivery"><p>dostawa</p></div>
+        <div>
+            <img src="img/delivery.png" alt="delivery">
+            <p>darmowa dostawa</p>
+        </div>
+
+        <div>
+            <img src="img/return.png" alt="return">
+            <p>darmowy zwrot</p>
+        </div>
+
+        <div>
+            <img src="img/save.png" alt="save shopping">
+            <p>bezpieczne zakupy</p>
+        </div>
+
+        <div>
+            <img src="img/send.png" alt="send in 24h">
+            <p>wysyłka w 24h</p>
+        </div>
+
     </section>
 
     <footer>
@@ -41,7 +108,8 @@
         <p><a href="../../index.html">wróć do strony głównej</a></p>
     </footer>
 
-
 </body>
 
 </html>
+
+<!-- czy <button> musi mieć tillte? -->
