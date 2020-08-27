@@ -1,49 +1,50 @@
-#item-grid {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    max-width: 1200px;
-    justify-content: space-around;
+.item-list {
+    display: flex;
+    justify-content: space-between; 
 }
 
 .item {
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8, 1fr);
+    width: 25%;
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 
-.item img {
-    width: 120px;
-    height: auto;
-    grid-column: 1 / 9;
-    grid-row: 1 / 5;
+.item-logo {
+    max-width: 100%;
 }
 
 .item-name {
-    grid-column: 1 / 9;
-    grid-row: 5 / 6;
+    text-align: center;
 }
 
 .item-old-price {
-    grid-column: 2 / 5;
-    grid-row: 6 / 7;
+    display: inline;
+    margin-left: 2em;
+    color: red;
+
 }
 
 .item-discount {
-    grid-column: 5 / 8;
-    grid-row: 6 / 7;
-} 
-
-.item-new-price {
-    grid-column: 1 / 9;
-    grid-row: 7 / 8;
+    display: inline;
+    margin-left: 10px;
+    padding: 2px;
+    background: red;
+    color: white;
 }
-
-.chart-button {
-    grid-column: 1 / 5;
-    grid-row: 8 / 9;
+.item-new-price {
+    text-align: center;
+}
+/* .chart-button {
+    box-sizing: border-box;
+    width: 50%;
 }
 
 .wish-button {
-    grid-column: 5 / 9;
-    grid-row: 8 / 9;
+    width: 50%;
+    box-sizing: border-box;
+} */
+.button {
+    display: flex;
+    justify-content: space-between;
+
 }
