@@ -1,12 +1,38 @@
-.item-list {
+header {
     display: flex;
-    justify-content: space-between; 
+
+}
+.nav-top {
+    box-sizing: border-box;
+    justify-content: flex-end;
+    max-width: 25%;
 }
 
+.search {
+    width: 50%;
+    align-items: ;
+}
+
+#magnifier {
+    max-width: 20px;
+    height: auto;
+}
+
+
 .item {
-    width: 25%;
+    width: 23%;
     box-sizing: border-box;
     border: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+#item-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .item-logo {
@@ -17,16 +43,18 @@
     text-align: center;
 }
 
-.item-old-price {
-    display: inline;
-    margin-left: 2em;
-    color: red;
+.item-prices {
+    text-align: center;
+}
 
+.item-old-price {
+    display: inline-block;
+    color: red;
 }
 
 .item-discount {
     display: inline;
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 2px;
     background: red;
     color: white;
@@ -34,17 +62,26 @@
 .item-new-price {
     text-align: center;
 }
-/* .chart-button {
-    box-sizing: border-box;
-    width: 50%;
-}
 
-.wish-button {
-    width: 50%;
-    box-sizing: border-box;
-} */
 .button {
     display: flex;
     justify-content: space-between;
+}
 
+ section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5em;
+} 
+
+.section-logo {
+    width: 50%;
+    text-align: center;
+}
+
+section > div {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
