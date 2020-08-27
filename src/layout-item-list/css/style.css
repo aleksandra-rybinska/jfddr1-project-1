@@ -1,12 +1,16 @@
-.item-list {
-    display: flex;
-    justify-content: space-between; 
-}
 
 .item {
     width: 25%;
     box-sizing: border-box;
     border: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.item-list {
+    display: flex;
+    justify-content: space-between; 
 }
 
 .item-logo {
@@ -17,16 +21,18 @@
     text-align: center;
 }
 
-.item-old-price {
-    display: inline;
-    margin-left: 2em;
-    color: red;
+.item-prices {
+    text-align: center;
+}
 
+.item-old-price {
+    display: inline-block;
+    color: red;
 }
 
 .item-discount {
     display: inline;
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 2px;
     background: red;
     color: white;
