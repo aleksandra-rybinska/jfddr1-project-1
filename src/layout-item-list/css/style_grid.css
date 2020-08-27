@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.item-list {
+    display: grid;
+    grid-template: repeat(4,auto) / repeat(4,1fr);
+    gap: 5px;
+}
+
+.item {
+    display: contents;
+    text-align: center;
+}
+
+.item-logo {
+    max-width: 100%;
+    grid-row-start: 1;
+    align-self: center;
+}
+
+.item-name {
+    grid-row-start: 2;
+}
+
+.item-prices {
+    grid-row-start: 3;
+}
+
+.item-old-price {
+    display: inline-block;
+    color: red;
+}
+
+.item-discount {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 2px;
+    background: red;
+    color: white;
+}
