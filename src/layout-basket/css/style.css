@@ -45,7 +45,6 @@ header {
     margin-bottom: 1em;
     text-align: center;
 }
-
 .nav-bottom a {
     box-sizing: border-box;
     background: #54ac98;
@@ -67,17 +66,15 @@ header {
     border: solid 1px #363634;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px #999;
+    box-shadow: 2px 2px 5px #999;
 }
 
-.button button:hover {
-    border: solid 1px #363634;
+#basket {
+    display: block;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #999;
 }
 
-h1 {
+/* h1 {
     display: block;
     margin: 50px 0 20px 0;
     padding: 12px;
@@ -89,9 +86,9 @@ h1 {
     text-shadow: 2px 2px #666;
     text-align: center;
     text-transform: uppercase;
-}
+} */
 
-#item-list {
+/* #item-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -144,11 +141,11 @@ h1 {
     text-align: center;
     margin: 0 auto;
     font-size: 25px;
-}
+} */
 
 .button {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 button {
@@ -169,8 +166,7 @@ button > p {
     margin: 0;
     padding-bottom: 15px;
 }
-
-section {
+ section {
     display: flex;
     justify-content: space-between;
     margin-top: 5em;
