@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>New design shop</title>
+    <title>Koszyk - New design shop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -36,12 +36,76 @@
     </header>
 
     <main id="basket">
-        <div>
-            <p>koszyk</p>
-        </div>
+        <aside>
+            <div>
+                <h1>koszyk (3 art.)</h1>
+            </div>
+            <div class="item">
+                <img src="../layout-item-list/img/fotel-glam-deep-forest-green.jpg" alt="fotel glam green">
+                <div class="item-name">
+                    <h3>Fotel glam deep forest green</h3>
+                    <p>Kolor: butelkowa zieleń</p>
+                    <div class="item-buttons">
+                        <button class="delete-button"><img src="img/trash.jpg"><p>usuń produkt</p></buton>
+                        <button class="add-wish-list-button">przenieś do listy życzeń</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="delivery">
+                <h3>Przewidywana dostawa przesyłki</h3>
+                <p>Pon, 03.11 - Śr, 05.11</p>
+            </div>
+            <div class="payment">
+                <h3>Metody płatności:</h3>
+                <img src="img/przelewy24.png" alt="logo przelewy 24">
+                <img src="img/visa.png" alt="logo visa">
+                <img src="img/mastercard.png" alt="logo mastercard">
+                <img src="img/pay-pal.png" alt="logo pay-pal">
+                <img src="img/amex.png" alt="logo amex">
+                <img src="img/cash.png" alt="logo gotówka">
+            </div>
+        </aside>
+
+
+        <section class="price">
+            <div>
+                <h1>Łączna kwota:</h1>
+                <h1>1359,99zł</h1>
+            </div>
+            <div>
+                <p>dostawa:</p>
+                <p>0zł</p>
+            </div>
+            <div>
+                <form action="" method="POST">
+                    <label for="discount">Kod rabatowy:</label>
+                    <input type="text" id="discount" name="discount">
+                </form>
+            </div>
+            <div>
+                <h2>do kasy</h2>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
-    <section>
+    <section class="section-bottom">
         <div>
             <img src="../layout-item-list/img/delivery.png" alt="delivery" class="section-logo">
             <h3 class="section-name">darmowa dostawa</h3>
