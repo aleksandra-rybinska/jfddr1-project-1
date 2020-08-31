@@ -12,7 +12,7 @@
     <header>
         <img src="../layout-item-list/img/baner.png" alt="logo">
         <div class="nav-aside">
-            <div class="search"> 
+            <div class="search">
                 <img src="../../img/magnifier.png" id="magnifier" alt="ikona lupy" />
                 <form action="" method="post">
                     <input name="searching" id="searching" type="text" placeholder="Szukaj produktu">
@@ -20,9 +20,15 @@
                 </form>
             </div>
             <nav class="nav-top">
-                <button class="sing-in-button"><img src="../layout-item-list/img/login.jpg"><h3>Logowanie</h3></button>
-                <button class="chart-button"><img src="../layout-item-list/img/shopping-chart.png"><h3>Koszyk</h3></button>
-                <button class="wish-list-button"><img src="../layout-item-list/img/heart.jpg"><h3>Lista życzeń</h3></button>
+                <button class="sing-in-button"><img src="../layout-item-list/img/login.jpg">
+                    <h3>Logowanie</h3>
+                </button>
+                <button class="chart-button"><img src="../layout-item-list/img/shopping-chart.png">
+                    <h3>Koszyk</h3>
+                </button>
+                <button class="wish-list-button"><img src="../layout-item-list/img/heart.jpg">
+                    <h3>Lista życzeń</h3>
+                </button>
             </nav>
             <nav class="nav-bottom">
                 <a href="">meble</a>
@@ -36,73 +42,172 @@
     </header>
 
     <main id="basket">
-        <aside>
-            <div>
-                <h1>koszyk (3 art.)</h1>
-            </div>
-            <div class="item">
-                <img src="../layout-item-list/img/fotel-glam-deep-forest-green.jpg" alt="fotel glam green">
-                <div class="item-name">
-                    <h3>Fotel glam deep forest green</h3>
-                    <p>Kolor: butelkowa zieleń</p>
+        <aside class="wrapper-aside">
+                <div>
+                    <h1>koszyk (4 art.)</h1>
+                </div>
+                <div class="item">
+                    <img src="../layout-item-list/img/fotel-glam-deep-forest-green.jpg" alt="fotel glam green">
+                    <div class="item-name">
+                        <h3>Fotel glam deep forest green</h3>
+                        <p>Kolor: butelkowa zieleń</p>
+                    </div>
+                    <div class="quantity">
+                        <p>ilość:</p>
+                        <form>
+                            <select name="type" id="type">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="item-price">
+                        <h2>769,99zł</h2>
+                    </div>
                     <div class="item-buttons">
-                        <button class="delete-button"><img src="img/trash.jpg"><p>usuń produkt</p></buton>
-                        <button class="add-wish-list-button">przenieś do listy życzeń</button>
+                        <button class="delete-button"><img src="img/trash.jpg">
+                            <p>usuń produkt</p>
+                            </buton>
+                            <button class="add-wish-list-button"><img src="../layout-item-list/img/heart.jpg">
+                                <p>przenieś do listy życzeń</p>
+                            </button>
                     </div>
                 </div>
 
-            </div>
-            <div class="delivery">
-                <h3>Przewidywana dostawa przesyłki</h3>
-                <p>Pon, 03.11 - Śr, 05.11</p>
-            </div>
-            <div class="payment">
-                <h3>Metody płatności:</h3>
-                <img src="img/przelewy24.png" alt="logo przelewy 24">
-                <img src="img/visa.png" alt="logo visa">
-                <img src="img/mastercard.png" alt="logo mastercard">
-                <img src="img/pay-pal.png" alt="logo pay-pal">
-                <img src="img/amex.png" alt="logo amex">
-                <img src="img/cash.png" alt="logo gotówka">
-            </div>
+                <div class="item">
+                    <img src="../layout-item-list/img/poduszka-wypoczynek-pod-palmami.jpg" alt="poduszka dekoracyjna">
+                    <div class="item-name">
+                        <h3>Poduszka dekoracyjna wypoczynek pod palmami</h3>
+                        <p>Rozmiar: 50cm x 50cm</p>
+                    </div>
+                    <div class="quantity">
+                        <p>ilość:</p>
+                        <form>
+                            <select name="type" id="type">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="item-price">
+                        <h2>29,99zł</h2>
+                    </div>
+                    <div class="item-buttons">
+                        <button class="delete-button"><img src="img/trash.jpg">
+                            <p>usuń produkt</p>
+                            </buton>
+                            <button class="add-wish-list-button"><img src="../layout-item-list/img/heart.jpg">
+                                <p>przenieś do listy życzeń</p>
+                            </button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../layout-item-list/img/dekoracja-scienna-alu-glowa-jelenia.jpg"
+                        alt="dekoracja ścienna głowa jelenia">
+                    <div class="item-name">
+                        <h3>Dekoracja ścienna głowa jelenia</h3>
+                        <p>Materiał: aluminium</p>
+                    </div>
+                    <div class="quantity">
+                        <p>ilość:</p>
+                        <form>
+                            <select name="type" id="type">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="item-price">
+                        <h2>429,99zł</h2>
+                    </div>
+                    <div class="item-buttons">
+                        <button class="delete-button"><img src="img/trash.jpg">
+                            <p>usuń produkt</p>
+                            </buton>
+                            <button class="add-wish-list-button"><img src="../layout-item-list/img/heart.jpg">
+                                <p>przenieś do listy życzeń</p>
+                            </button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../layout-item-list/img/komplet-puf-ze-schowkiem-ciemna-zielen.jpg"
+                        alt="komplet puf ciemna zieleń">
+                    <div class="item-name">
+                        <h3>Komplet puf ze schowkiem</h3>
+                        <p>Kolor: ciemna zieleń</p>
+                    </div>
+                    <div class="quantity">
+                        <p>ilość:</p>
+                        <form>
+                            <select name="type" id="type">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="item-price">
+                        <h2>339,99zł</h2>
+                    </div>
+                    <div class="item-buttons">
+                        <button class="delete-button"><img src="img/trash.jpg">
+                            <p>usuń produkt</p>
+                            </buton>
+                            <button class="add-wish-list-button"><img src="../layout-item-list/img/heart.jpg">
+                                <p>przenieś do listy życzeń</p>
+                            </button>
+                    </div>
+                </div>
+
+                <div class="delivery">
+                    <h3>Przewidywana dostawa przesyłki</h3>
+                    <p>Pon, 03.11 - Śr, 05.11</p>
+                </div>
+                <div class="payment">
+                    <h3>Metody płatności:</h3>
+                    <img src="img/przelewy24.png" alt="logo przelewy 24">
+                    <img src="img/visa.png" alt="logo visa">
+                    <img src="img/mastercard.png" alt="logo mastercard">
+                    <img src="img/pay-pal.png" alt="logo pay-pal">
+                    <img src="img/amex.png" alt="logo amex">
+                    <img src="img/cash.png" alt="logo gotówka">
+                </div>
         </aside>
 
-
         <section class="price">
-            <div>
-                <h1>Łączna kwota:</h1>
-                <h1>1359,99zł</h1>
-            </div>
-            <div>
-                <p>dostawa:</p>
-                <p>0zł</p>
-            </div>
-            <div>
-                <form action="" method="POST">
-                    <label for="discount">Kod rabatowy:</label>
-                    <input type="text" id="discount" name="discount">
-                </form>
-            </div>
-            <div>
-                <h2>do kasy</h2>
+            <div class="wrapper-price">
+                <div>
+                    <h1>Łączna kwota:</h1>
+                    <h1>1569,96zł</h1>
+                </div>
+                <div>
+                    <p>dostawa:</p>
+                    <p>0zł</p>
+                </div>
+                <div class="discount-form">
+                    <form action="" method="POST">
+                        <label for="discount">Kod rabatowy:</label>
+                        <input type="text" id="discount" name="discount">
+                    </form>
+                </div>
+                <div>
+                    <h2>do kasy</h2>
+                </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
     <section class="section-bottom">

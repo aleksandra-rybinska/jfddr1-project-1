@@ -19,6 +19,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 85%;
 }
 
@@ -30,7 +31,7 @@ header {
 
 .search {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #magnifier {
@@ -77,16 +78,12 @@ header {
     gap: 3%;
 }
 
-.price div {
+.wrapper-price div {
     display: flex;
     background: #fff;
     justify-content: space-between;
     padding-right: 1em;
     padding-left: 1em;
-}
-
-p {
-    font-size: 1.2em;
 }
 
 .price form {
@@ -109,6 +106,16 @@ p {
     background: #363634;
 }
 
+.wrapper-price {
+    position: sticky;
+    top: 0;
+    box-shadow: 3px 3px 10px #999;
+}
+
+.wrapper-aside {
+    box-shadow: 3px 3px 10px #999;
+}
+
 aside div {
     display: flex;
     background: #fff;
@@ -122,6 +129,10 @@ aside div {
     flex-flow: column;
 }
 
+.payment {
+    padding: 20px 5px;
+}
+
 .payment > img {
     width: 12%;
     height: 12%;
@@ -129,98 +140,63 @@ aside div {
 
 .item {
     display: grid;
-    grid-template-columns: 20% 50% 30%;
-    grid-template-areas: "img .item-name .quantity";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "img item-name quantity" "img item-buttons item-price";
+    padding: 10px 5px;
+    border-bottom: solid 1px #eee;
 }
 
-.item img {
+.quantity {
+    grid-area: quantity;
+    align-items: baseline;
+}
+
+.item-price {
+    grid-area: item-price
+}
+
+.item > img {
+    grid-area: img;
     width: 100%;
+    height: auto;
 }
 
 .item-name {
+    grid-area: item-name;
     display: inline;
 }
 
 .item-buttons {
-    height: auto;
-    width: 20px;
-}
-
-
-
-
-/* h1 {
-    display: block;
-    margin: 50px 0 20px 0;
-    padding: 12px;
-    border: solid 1px #EB6142;
-    border-radius: 5px;
-    background: #EB6142;
-    box-shadow: 3px 3px 10px #999;
-    color: #fff;
-    text-shadow: 2px 2px #666;
-    text-align: center;
-    text-transform: uppercase;
-} */
-
-/* #item-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-
-.item {
-    display: flex;
-    box-sizing: border-box;
-    width: 23%;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 5px;
-    background: white;
-    box-shadow: 5px 5px 10px #999;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
-
-.item-logo {
-    max-width: 100%;
-}
-
-.item-name {
-    margin: 0;
-    text-align: center;
-}
-
-.item-prices {
-    display: flex;
+    grid-area: item-buttons;
     justify-content: center;
 }
 
-.item-old-price {
-    display: inline-block;
-    color: #EB6142;
-    text-decoration: line-through;
-    font-size: 18px;
+.item-buttons button {
+    background: #fff;
+    border: 1px solid #fff;
 }
 
-.item-discount {
-    display: inline;
-    margin-left: 5px;
-    padding: 2px;
-    background: #EB6142;
-    color: #fff;
+.item-buttons button:hover {
+    border: solid 1px #666;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #999;
 }
 
-.item-new-price {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 25px;
-} */
+button > p {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
 
-.button {
-    display: flex;
-    justify-content: space-around;
+.item-buttons button > img {
+    height: 30px;
+    width: auto;
+}
+
+.delivery {
+    border-bottom: solid 1px #eee;
 }
 
 button {
@@ -237,11 +213,7 @@ button > h3 {
     padding: 2px;
 }
 
-button > p {
-    margin: 0;
-    padding-bottom: 15px;
-}
- .section-bottom {
+.section-bottom {
     display: flex;
     justify-content: space-between;
     margin-top: 5em;
@@ -270,8 +242,6 @@ footer {
     margin-top: 3em;
     background: #54ac98;
     box-shadow: 3px 3px 10px #999;
-    
-    
 }
 
 #nav-footer a {
