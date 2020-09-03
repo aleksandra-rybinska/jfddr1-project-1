@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.wrapper {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    background: #0a7f82;
+    box-shadow: 5px 5px 15px #ccc;
+}
+
+.header-logo {
+    width: 100%;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav-button {
+    box-sizing: border-box;
+    display: block;
+    border: solid 1px yellow;
+    width: 10%;
+    background-image: url(img/main-button3.png);
+}
+
+.button-logo {
+    width: 20px;
+    height: auto;
+}
+/* 
+.header-nav > img {
+    width: 10%;
+} */
