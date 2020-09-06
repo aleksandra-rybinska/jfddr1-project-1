@@ -1,15 +1,27 @@
 * {
     box-sizing: border-box;
     margin-top: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.wrapper {
+.wrapper-header {
     display: block;
     position: relative;
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 7vw auto;
     background: #0a7f82;
-    box-shadow: 5px 5px 15px #ccc;
+    box-shadow: 0 1px 0px 0px #0a7f82, 0 -9px 0px 0px #0a7f82, 5px 0 15px -4px #888, -2px 0 15px -4px #888;
+    border-radius: 0 0 2.5px 2.5px;
+}
+
+.wrapper-container {
+    display: block;
+    position: relative;
+    width: 95%;
+    margin: 7vw auto;
+    background: #0a7f82;
+    box-shadow: 0 1px 0px 0px #0a7f82, 0 -9px 0px 0px #0a7f82, 5px 0 15px -4px #888, -2px 0 15px -4px #888;
+    border-radius: 2.5px;
 }
 
 .header-logo {
@@ -20,7 +32,6 @@
     box-sizing: border-box;
     display: block;
     position: relative;
-    /* border: solid 1px yellow; */
     width: 100%;
     text-align: center;
     justify-self: center;
@@ -32,15 +43,15 @@
 }
 
 .nav-button > p {
+    display: inline-flex;
+    justify-content: center;
     position: absolute;
-    top: 1rem;
+    align-items: center;
+    top: 0.2vw;
     left: 0;
     right: 0;
     bottom: 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     text-decoration: none;
     color: #c62b20;
     text-shadow: 3px 3px 3px #999;
@@ -53,7 +64,7 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 45% 49%;
+    grid-template-rows: 40% 40%;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -63,3 +74,121 @@
     right:26%;
 }
 
+.wrapper-header > p {
+    display: block;
+    padding: 0 0 2vw 2vw ;
+    font-size: 2vw;
+    color: #ebe6c4;
+    text-shadow: 2px 2px 2px #444;
+    border-radius: 7px;
+}
+
+#about-me {
+    display: grid;
+    grid-template-columns: 25% 42% 20%;
+    grid-template-rows:10% 70%;
+    column-gap: 3%;
+    grid-template-areas: "content-img content-title content-logo" "content-img content content";
+    position: inherit;
+    top: 10%;
+    bottom: 5%;
+    left: 3%;
+    right:5%;
+}
+
+.content-img {
+    grid-area: content-img;
+    align-self: flex-start;
+    padding-top: 10.5vw;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+.content-logo {
+    grid-area: content-logo;
+    display: inline-block;
+}
+
+.content-logo img {
+    position: relative;
+
+}
+
+.content-logo p {
+    position: absolute;
+    top: 3.2vw;
+    right: 10.5vw;
+    font-size: 2.5vw;
+    color: #c62b20;
+    text-shadow: 3px 3px 3px #999;
+}
+
+.content-title {
+    grid-area: content-title;
+    justify-self: center;
+    align-self: center;
+    font-size: 2.8vw;
+    font-weight: normal;
+    color: #ebe6c4;
+    text-shadow: 2px 2px 2px #444;
+}
+
+.content {
+    grid-area: content;
+    display: block;
+    padding: 0vw 1vw 5vw 0vw;
+    font-size: 25px;
+    color: #ebe6c4;
+    text-shadow: 2px 2px 2px #444;
+    text-align: justify;
+}
+
+#super-powers {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-template-rows:10% 70%;
+    column-gap: 1%;
+    grid-template-areas: "content-title content-logo" "content content";
+    position: inherit;
+    top: 10%;
+    bottom: 5%;
+    left: 5%;
+    right:5%;
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-template-rows:10% 70%;
+    column-gap: 1%;
+    grid-template-areas: "content-title content-logo" "content content";
+    position: inherit;
+    top: 10%;
+    bottom: 5%;
+    left: 5%;
+    right:5%;
+}
+
+#portfolio .content-logo p {
+    position: absolute;
+    right: 13vw;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-template-rows:10% 70%;
+    column-gap: 1%;
+    grid-template-areas: "content-title content-logo" "content content";
+    position: inherit;
+    top: 10%;
+    bottom: 5%;
+    left: 5%;
+    right:5%;
+}
+
+#contact .content-logo p {
+    position: absolute;
+    right: 13.7vw;
+}
